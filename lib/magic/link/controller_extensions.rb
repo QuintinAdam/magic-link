@@ -17,6 +17,7 @@ module Magic
             flash[:notice] = "You have signed in successfully"
             user.update_columns(sign_in_token: nil, sign_in_token_sent_at: nil)
             sign_in user
+            redirect_to main_app.root_path
           elsif email && token
             flash[:alert] = "Your sign in token is invalid"
             redirect_to main_app.root_path
