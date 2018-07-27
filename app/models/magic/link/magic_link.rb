@@ -5,7 +5,7 @@ module Magic
       attr_accessor :email
 
       def send_login_instructions(force: false)
-        token = set_sign_in_token(force)
+        token = set_sign_in_token(force: force)
         send_magic_link_email(token) if token
         token
       end
