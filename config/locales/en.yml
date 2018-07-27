@@ -1,0 +1,6 @@
+en:
+  magic-link:
+    mailer:
+      subject: "Your magic sign in link"
+      greetings: "Hey there! Here is your sign in link (you can only use it once):"
+      sign_in_text: "Sign In"
