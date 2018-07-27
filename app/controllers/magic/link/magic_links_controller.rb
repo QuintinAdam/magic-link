@@ -1,6 +1,6 @@
 module Magic
   module Link
-    class MagicLinksController < ::ApplicationController
+    class MagicLinksController < ::DeviseController
       before_action :check_user, only: :new
 
       def new
