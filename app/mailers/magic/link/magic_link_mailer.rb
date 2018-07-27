@@ -1,5 +1,5 @@
 module Magic::Link
-  class MagicLinkMailer < ::Devise::Mailer
+  class MagicLinkMailer < ::ApplicationMailer
     default from: Magic::Link.email_from
     def send_magic_link(email, token)
       @email = email
